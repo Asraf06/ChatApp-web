@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anila's AI Chatbot Pro</title>
+    <title>Asraful's AI Chatbot Pro</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -400,7 +400,7 @@
 <body>
     <header>
         <div class="container">
-            <h1>Anila's AI Chatbot Pro</h1>
+            <h1>Asraful's AI Chatbot Pro</h1>
             <p>Advanced AI assistant with code formatting and more</p>
         </div>
     </header>
@@ -421,7 +421,7 @@
             <div class="chat-messages" id="chat-messages">
                 <div class="message bot-message">
                     <div class="message-content">
-                        Hello! Welcome to the AI Chat Bot by Anila! How can I help you today?
+                        Hello! Welcome to the AI Chat Bot by Asraful! How can I help you today?
                         <div class="message-actions">
                             <button class="action-btn copy-message-btn" title="Copy message">
                                 <i class="fas fa-copy"></i>
@@ -469,7 +469,7 @@
             let conversationHistory = [
                 {
                     role: "assistant",
-                    content: "Hello! Welcome to the AI Chat Bot by Anila! How can I help you today?"
+                    content: "Hello! Welcome to the AI Chat Bot by Asraful! How can I help you today?"
                 }
             ];
 
@@ -597,7 +597,7 @@
                     if (isGreeting(message)) {
                         setTimeout(() => {
                             hideTyping();
-                            const response = "Hello! Welcome to the AI Chat Bot by Anila! How can I help you today?";
+                            const response = "Hello! Welcome to the AI Chat Bot by Asraful! How can I help you today?";
                             addMessage('assistant', response);
                             conversationHistory.push({ role: "assistant", content: response });
                         }, 1000);
@@ -610,7 +610,7 @@
                             'Authorization': `Bearer ${API_KEY}`,
                             'Content-Type': 'application/json',
                             'HTTP-Referer': window.location.href,
-                            'X-Title': "Anila's AI Chatbot"
+                            'X-Title': "Asraful's AI Chatbot"
                         },
                         body: JSON.stringify({
                             model: MODEL,
@@ -640,7 +640,7 @@
                 chatMessages.innerHTML = `
                     <div class="message bot-message">
                         <div class="message-content">
-                            Hello! Welcome to the AI Chat Bot by Anila! How can I help you today?
+                            Hello! Welcome to the AI Chat Bot by Asraful! How can I help you today?
                             <div class="message-actions">
                                 <button class="action-btn copy-message-btn" title="Copy message">
                                     <i class="fas fa-copy"></i>
@@ -653,7 +653,7 @@
                 conversationHistory = [
                     {
                         role: "assistant",
-                        content: "Hello! Welcome to the AI Chat Bot by Anila! How can I help you today?"
+                        content: "Hello! Welcome to the AI Chat Bot by Asraful! How can I help you today?"
                     }
                 ];
                 
@@ -662,7 +662,7 @@
 
             // Export chat to text file
             function exportChat() {
-                let chatText = "Anila's AI Chatbot Conversation\n\n";
+                let chatText = "Asraful's AI Chatbot Conversation\n\n";
                 
                 const messages = chatMessages.querySelectorAll('.message');
                 messages.forEach(msg => {
